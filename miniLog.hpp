@@ -76,7 +76,7 @@ namespace miniLog{
 			
 		}
 
-		void log(miniMessage & message){
+		void log(const miniMessage & message){
 			fs::ofstream ofs{p,fs::ofstream::out|fs::ofstream::app};
 			ofs << message << std::endl;
 		}
