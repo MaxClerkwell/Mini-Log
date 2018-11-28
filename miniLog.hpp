@@ -80,6 +80,11 @@ namespace miniLog{
 			fs::ofstream ofs{p,fs::ofstream::out|fs::ofstream::app};
 			ofs << message << std::endl;
 		}
+
+		miniLogger& operator<< (const miniMessage & message){
+			log(message);
+			return *this;
+		}
 	};
 }
 
