@@ -15,10 +15,10 @@ namespace miniLog{
 	enum miniMessage_T {status, warning, error};
 	struct miniMessage{
 		std::chrono::system_clock::time_point messageTime;
-		message_T messageType;
+		miniMessage_T messageType;
 		std::string message;
 
-		miniMessage(message_T mType, const std::string & mString)
+		miniMessage(miniMessage_T mType, const std::string & mString)
 			:messageTime{std::chrono::system_clock::now()},
 			messageType{mType},
 			message{mString}
