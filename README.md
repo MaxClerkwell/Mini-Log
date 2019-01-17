@@ -2,6 +2,7 @@
 Mini-Log is a minimum structual-logging library. Header-Only and simple to use. 
 
 ## How to use Mini-Log
+0) get boost
 1) Clone Mini-Log into your project-folder
 2) include miniLog.hpp
 3) include <string>
@@ -9,6 +10,8 @@ Mini-Log is a minimum structual-logging library. Header-Only and simple to use.
 5) build a 'miniLog::miniLogger myLogger{log_path, "Application Name"};'
 
 There is your Logger.
+
+When it comes to compilation, please add -lboost_system to your compiler-flags.
 
 ## Log a Message
 Mini-Log has a miniMessage Type. If you want to log a message just use 
